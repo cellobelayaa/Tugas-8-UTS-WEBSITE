@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknik Informatika - Modern University</title>
+    <link rel="stylesheet" href="asseet.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">🎓</div>
+            <span class="logo-text">TI UNIV</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-item active" data-section="home">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">Beranda</span>
+            </a></li>
+            <li><a href="#program" class="nav-item" data-section="program">
+                <span class="nav-icon">💻</span>
+                <span class="nav-label">Program</span>
+            </a></li>
+            <li><a href="#jadwal" class="nav-item" data-section="jadwal">
+                <span class="nav-icon">📅</span>
+                <span class="nav-label">Jadwal</span>
+            </a></li>
+            <li><a href="#biaya" class="nav-item" data-section="biaya">
+                <span class="nav-icon">💰</span>
+                <span class="nav-label">Biaya</span>
+            </a></li>
+            <li><a href="#kampus" class="nav-item" data-section="kampus">
+                <span class="nav-icon">🏛️</span>
+                <span class="nav-label">Kampus</span>
+            </a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <button class="contact-btn">Hubungi Kami</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Pendaftaran Dibuka
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Teknik</span>
+                    <span class="title-line gradient-text">Informatika</span>
+                </h1>
+                <p class="hero-subtitle">Wujudkan masa depan digital di kampus modern dengan teknologi terkini dan pengajar berpengalaman</p>
+                
+                <div class="hero-cta">
+                    <button class="cta-primary">
+                        <span>Mulai Sekarang</span>
+                        <span class="cta-arrow">→</span>
+                    </button>
+                    <button class="cta-secondary">
+                        <span>Unduh Brosur</span>
+                        <span class="cta-icon">📄</span>
+                    </button>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-info">
+                            <div class="stat-value" data-target="400">0</div>
+                            <div class="stat-label">Mahasiswa Aktif</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-info">
+                            <div class="stat-value" data-target="25">0</div>
+                            <div class="stat-label">% Tingkat Kelulusan</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🏢</div>
+                        <div class="stat-info">
+                            <div class="stat-value" data-target="50">0</div>
+                            <div class="stat-label">Perusahaan Mitra</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-info">
+                            <div class="stat-value" data-target="95">0</div>
+                            <div class="stat-label">Score Kepuasan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Visual Element -->
+            <div class="hero-visual">
+                <div class="visual-card main-card">
+                    <div class="card-glow"></div>
+                    <div class="geometric-shape">
+                        <div class="shape-layer layer-1"></div>
+                        <div class="shape-layer layer-2"></div>
+                        <div class="shape-layer layer-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="program" class="section programs-section">
+            <div class="section-header">
+                <span class="section-tag">Kurikulum Terbaik</span>
+                <h2 class="section-title">Program Unggulan</h2>
+                <p class="section-desc">Pelajari teknologi terkini dengan metode pembelajaran praktis dan project-based</p>
+            </div>
+
+            <div class="programs-container">
+                <div class="program-item">
+                    <div class="program-header">
+                        <div class="program-icon">🤖</div>
+                        <h3 class="program-name">AI & Machine Learning</h3>
+                    </div>
+                    <p class="program-description">Pelajari teknologi kecerdasan buatan dan machine learning dengan praktik langsung menggunakan tools terkini.</p>
+                    <div class="program-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                    <div class="program-footer">
+                        <span class="program-duration">⏱️ 4 Semester</span>
+                    </div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-header">
+                        <div class="program-icon">☁️</div>
+                        <h3 class="program-name">Cloud Computing</h3>
+                    </div>
+                    <p class="program-description">Kuasai infrastruktur cloud modern dengan AWS, Azure, dan Google Cloud Platform.</p>
+                    <div class="program-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">DevOps</span>
+                    </div>
+                    <div class="program-footer">
+                        <span class="program-duration">⏱️ 4 Semester</span>
+                    </div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-header">
+                        <div class="program-icon">🔒</div>
+                        <h3 class="program-name">Cybersecurity</h3>
+                    </div>
+                    <p class="program-description">Pelajari keamanan sistem dan jaringan untuk melindungi infrastruktur digital.</p>
+                    <div class="program-tags">
+                        <span class="tag">Security</span>
+                        <span class="tag">Penetration Testing</span>
+                    </div>
+                    <div class="program-footer">
+                        <span class="program-duration">⏱️ 4 Semester</span>
+                    </div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-header">
+                        <div class="program-icon">📱</div>
+                        <h3 class="program-name">Mobile Development</h3>
+                    </div>
+                    <p class="program-description">Buat aplikasi mobile untuk Android dan iOS dengan framework modern seperti Flutter dan React Native.</p>
+                    <div class="program-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">React Native</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                    <div class="program-footer">
+                        <span class="program-duration">⏱️ 4 Semester</span>
+                    </div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-header">
+                        <div class="program-icon">📊</div>
+                        <h3 class="program-name">Big Data</h3>
+                    </div>
+                    <p class="program-description">Analisis data dalam skala besar menggunakan teknologi big data dan data science.</p>
+                    <div class="program-tags">
+                        <span class="tag">Hadoop</span>
+                        <span class="tag">Spark</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                    <div class="program-footer">
+                        <span class="program-duration">⏱️ 4 Semester</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="jadwal" class="section timeline-section">
+            <div class="section-header">
+                <span class="section-tag">Proses Pendaftaran</span>
+                <h2 class="section-title">Timeline Pendaftaran</h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-block">
+                    <div class="timeline-marker">
+                        <span class="marker-number">1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Tahap Pendaftaran</h3>
+                        <p class="timeline-text">Isi form pendaftaran online dan upload dokumen yang diperlukan</p>
+                        <span class="timeline-date">Januari - Februari</span>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="timeline-marker">
+                        <span class="marker-number">2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Tes Seleksi</h3>
+                        <p class="timeline-text">Tes tertulis dan wawancara</p>
+                        <span class="timeline-date">Maret</span>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="timeline-marker">
+                        <span class="marker-number">3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Pengumuman</h3>
+                        <p class="timeline-text">Pengumuman hasil tes akan diinformasikan melalui email</p>
+                        <span class="timeline-date">April</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Section -->
+        <section id="biaya" class="section investment-section">
+            <div class="section-header">
+                <span class="section-tag">Investasi Masa Depan</span>
+                <h2 class="section-title">Investasi Pendidikan</h2>
+            </div>
+
+            <div class="pricing-container">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">📚</div>
+                        <h3 class="pricing-title">Regular & Kelas</h3>
+                        <p class="pricing-desc">Untuk siswa reguler dengan fasilitas standar</p>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-amount">
+                            <span class="currency">Rp</span>
+                            <span class="amount">4.200.000</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✓ Akses e-learning</li>
+                            <li>✓ Perpustakaan digital</li>
+                            <li>✓ Lab komputer</li>
+                            <li>✓ Sertifikat resmi</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn">Pilih Paket</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Populer</div>
+                    <div class="pricing-header">
+                        <div class="pricing-icon">🎓</div>
+                        <h3 class="pricing-title">KIP dan Beasiswa</h3>
+                        <p class="pricing-desc">Dengan benefit tambahan dan akses premium</p>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-amount">
+                            <span class="currency">Rp</span>
+                            <span class="amount">5.500.000</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✓ Semua fitur Regular</li>
+                            <li>✓ Mentoring premium</li>
+                            <li>✓ Workshop eksklusif</li>
+                            <li>✓ Job placement</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn primary">Pilih Paket</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Section -->
+        <section id="kampus" class="section campus-section">
+            <div class="section-header">
+                <span class="section-tag">Fasilitas Modern</span>
+                <h2 class="section-title">Life at Campus</h2>
+            </div>
+
+            <div class="campus-grid">
+                <div class="campus-card large">
+                    <div class="campus-image">
+                        <img src="assets/images/campus.jpg" alt="Campus">
+                        <div class="campus-overlay">
+                            <h3 class="campus-title">Fasilitas Kampus</h3>
+                            <p class="campus-desc">Gedung modern dengan teknologi terkini</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="campus-card">
+                    <div class="campus-image">
+                        <img src="assets/images/lab.jpg" alt="Lab">
+                        <div class="campus-overlay">
+                            <h3 class="campus-title">Lab Komputer</h3>
+                            <p class="campus-desc">Lab dengan perangkat canggih</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni Stories -->
+            <div class="alumni-container">
+                <h3 class="alumni-heading">Alumni Stories</h3>
+                <div class="alumni-grid">
+                    <div class="alumni-card">
+                        <div class="alumni-quote">"</div>
+                        <p class="alumni-text">Program ini memberikan bekal yang sangat solid untuk karir di tech industry</p>
+                        <div class="alumni-profile">
+                            <div class="alumni-avatar"></div>
+                            <div class="alumni-info">
+                                <h4 class="alumni-name">Dimas Aji</h4>
+                                <p class="alumni-role">Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alumni-card">
+                        <div class="alumni-quote">"</div>
+                        <p class="alumni-text">Pengalaman belajar yang luar biasa dengan mentor-mentor berpengalaman</p>
+                        <div class="alumni-profile">
+                            <div class="alumni-avatar"></div>
+                            <div class="alumni-info">
+                                <h4 class="alumni-name">Sarah Putri</h4>
+                                <p class="alumni-role">Data Scientist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Join?</h2>
+                <p class="cta-subtitle">Bergabung dengan 38 calon mahasiswa lainnya di angkatan ini</p>
+                <button class="cta-button">
+                    <span>Daftar Sekarang</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="asset_js"></script>
+</body>
+</html>
