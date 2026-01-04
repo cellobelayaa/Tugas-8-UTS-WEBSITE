@@ -3,378 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teknik Informatika - Modern University</title>
-    <link rel="stylesheet" href="asseet.css">
+    <title>Kontak & Bantuan - Portal Mahasiswa FaSTI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Particle Background -->
-    <canvas id="particleCanvas"></canvas>
-    
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar">
-        <div class="logo">
-            <div class="logo-icon">🎓</div>
-            <span class="logo-text">TI UNIV</span>
-        </div>
-        <ul class="nav-menu">
-            <li><a href="#home" class="nav-item active" data-section="home">
-                <span class="nav-icon">🏠</span>
-                <span class="nav-label">Beranda</span>
-            </a></li>
-            <li><a href="#program" class="nav-item" data-section="program">
-                <span class="nav-icon">💻</span>
-                <span class="nav-label">Program</span>
-            </a></li>
-            <li><a href="#jadwal" class="nav-item" data-section="jadwal">
-                <span class="nav-icon">📅</span>
-                <span class="nav-label">Jadwal</span>
-            </a></li>
-            <li><a href="#biaya" class="nav-item" data-section="biaya">
-                <span class="nav-icon">💰</span>
-                <span class="nav-label">Biaya</span>
-            </a></li>
-            <li><a href="#kampus" class="nav-item" data-section="kampus">
-                <span class="nav-icon">🏛️</span>
-                <span class="nav-label">Kampus</span>
-            </a></li>
-        </ul>
-        <div class="sidebar-footer">
-            <button class="contact-btn">Hubungi Kami</button>
-        </div>
-    </nav>
+    <div class="container">
+        <header>
+            <h1>Portal Layanan Mahasiswa FaSTI</h1>
+            <p>Sistem Informasi Layanan Mahasiswa</p>
+        </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Hero Section -->
-        <section id="home" class="section hero-section">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    Pendaftaran Dibuka
-                </div>
-                <h1 class="hero-title">
-                    <span class="title-line">Teknik</span>
-                    <span class="title-line gradient-text">Informatika</span>
-                </h1>
-                <p class="hero-subtitle">Wujudkan masa depan digital di kampus modern dengan teknologi terkini dan pengajar berpengalaman</p>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#riwayat">Riwayat</a></li>
+                <li><a href="#kontak">Kontak & Bantuan</a></li>
+                <li><a href="#profil">Profil</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="breadcrumb">
+                <a href="#dashboard">Home</a> / <span>Kontak & Bantuan</span>
+            </div>
+
+            <section class="faq-section">
+                <h2 class="section-title">Pertanyaan yang Sering Diajukan (FAQ)</h2>
                 
-                <div class="hero-cta">
-                    <button class="cta-primary">
-                        <span>Mulai Sekarang</span>
-                        <span class="cta-arrow">→</span>
-                    </button>
-                    <button class="cta-secondary">
-                        <span>Unduh Brosur</span>
-                        <span class="cta-icon">📄</span>
-                    </button>
+                <div class="faq-search">
+                    <input type="text" id="searchFaq" class="search-box" placeholder="🔍 Cari pertanyaan...">
                 </div>
 
-                <!-- Stats Cards -->
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-icon">👥</div>
-                        <div class="stat-info">
-                            <div class="stat-value" data-target="400">0</div>
-                            <div class="stat-label">Mahasiswa Aktif</div>
+                <div id="faqContainer">
+                    <div class="faq-item" data-keywords="surat aktif kuliah pengajuan berapa lama">
+                        <div class="faq-question">
+                            Berapa lama waktu pemrosesan pengajuan Surat Aktif Kuliah?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Waktu pemrosesan pengajuan Surat Aktif Kuliah adalah 3-5 hari kerja setelah dokumen persyaratan dinyatakan lengkap dan valid oleh bagian akademik. Anda dapat memantau status permohonan melalui menu Riwayat Permohonan.</p>
                         </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">🎓</div>
-                        <div class="stat-info">
-                            <div class="stat-value" data-target="25">0</div>
-                            <div class="stat-label">% Tingkat Kelulusan</div>
+
+                    <div class="faq-item" data-keywords="transkrip nilai download cetak">
+                        <div class="faq-question">
+                            Bagaimana cara mengunduh Transkrip Nilai yang sudah disetujui?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Setelah permohonan transkrip nilai Anda disetujui, Anda dapat mengunduhnya melalui menu Download Dokumen. Pilih jenis dokumen "Transkrip Nilai" dan klik tombol unduh. Dokumen tersedia dalam format PDF yang sudah dilengkapi dengan tanda tangan digital.</p>
                         </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">🏢</div>
-                        <div class="stat-info">
-                            <div class="stat-value" data-target="50">0</div>
-                            <div class="stat-label">Perusahaan Mitra</div>
+
+                    <div class="faq-item" data-keywords="cuti kuliah syarat persyaratan">
+                        <div class="faq-question">
+                            Apa saja persyaratan untuk mengajukan Surat Cuti Kuliah?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Persyaratan pengajuan cuti kuliah meliputi: (1) Surat permohonan bermaterai, (2) KTM aktif, (3) Slip pembayaran semester terakhir, (4) Surat persetujuan orang tua/wali, dan (5) Surat keterangan dari dosen wali. Pastikan semua dokumen telah dipindai dengan jelas sebelum diunggah.</p>
                         </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">⭐</div>
-                        <div class="stat-info">
-                            <div class="stat-value" data-target="95">0</div>
-                            <div class="stat-label">Score Kepuasan</div>
+
+                    <div class="faq-item" data-keywords="bebas perpustakaan peminjaman buku">
+                        <div class="faq-question">
+                            Bagaimana cara mendapatkan Surat Bebas Perpustakaan?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Untuk mendapatkan Surat Bebas Perpustakaan, pastikan Anda tidak memiliki tunggakan peminjaman buku atau denda. Kemudian ajukan permohonan melalui portal dengan melampirkan bukti pengembalian buku terakhir. Verifikasi dilakukan oleh bagian perpustakaan maksimal 2 hari kerja.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-keywords="edit data kontak email alamat nomor telepon">
+                        <div class="faq-question">
+                            Apakah saya bisa mengubah data kontak seperti email dan nomor telepon?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ya, Anda dapat memperbarui data kontak melalui menu Edit Data Kontak Mahasiswa. Perubahan email dan nomor telepon memerlukan verifikasi melalui OTP yang dikirimkan ke kontak baru. Data alamat dapat diubah langsung tanpa verifikasi tambahan.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-keywords="notifikasi status permohonan ditolak disetujui">
+                        <div class="faq-question">
+                            Bagaimana cara mengetahui status permohonan saya?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Status permohonan dapat dipantau melalui menu Notifikasi Status Permohonan atau Riwayat Permohonan. Sistem juga akan mengirimkan notifikasi email otomatis setiap kali ada perubahan status pada permohonan Anda (diproses, disetujui, atau ditolak).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-keywords="lupa password reset login masuk">
+                        <div class="faq-question">
+                            Apa yang harus dilakukan jika lupa password?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Jika Anda lupa password, klik tombol "Lupa Password" di halaman login. Masukkan NIM dan email terdaftar, kemudian sistem akan mengirimkan link reset password ke email Anda. Link berlaku selama 24 jam. Jika masih bermasalah, hubungi admin melalui halaman kontak ini.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-keywords="jam operasional layanan buka tutup">
+                        <div class="faq-question">
+                            Kapan jam operasional layanan mahasiswa?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Layanan administrasi mahasiswa beroperasi pada hari Senin-Jumat pukul 08.00-16.00 WIB. Untuk layanan online (portal), Anda dapat mengajukan permohonan kapan saja 24/7, namun pemrosesan dilakukan pada jam kerja. Pada hari libur nasional, layanan tutup.</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- 3D Visual Element -->
-            <div class="hero-visual">
-                <div class="visual-card main-card">
-                    <div class="card-glow"></div>
-                    <div class="geometric-shape">
-                        <div class="shape-layer layer-1"></div>
-                        <div class="shape-layer layer-2"></div>
-                        <div class="shape-layer layer-3"></div>
+                <div class="no-results">
+                    <p>Tidak ada hasil yang ditemukan. Silakan coba kata kunci lain atau hubungi kami melalui form di bawah.</p>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2 class="section-title">Informasi Kontak</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>fasti@university.ac.id</p>
+                        <p>admin.fasti@university.ac.id</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Telepon</h3>
+                        <p>(021) 1234-5678</p>
+                        <p>Ext. 123 (Layanan Mahasiswa)</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Alamat</h3>
+                        <p>Gedung Fakultas FaSTI Lt. 2</p>
+                        <p>Jl. Universitas No. 1, Jakarta</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">⏰</div>
+                        <h3>Jam Operasional</h3>
+                        <p>Senin - Jumat</p>
+                        <p>08.00 - 16.00 WIB</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Programs Section -->
-        <section id="program" class="section programs-section">
-            <div class="section-header">
-                <span class="section-tag">Kurikulum Terbaik</span>
-                <h2 class="section-title">Program Unggulan</h2>
-                <p class="section-desc">Pelajari teknologi terkini dengan metode pembelajaran praktis dan project-based</p>
-            </div>
-
-            <div class="programs-container">
-                <div class="program-item">
-                    <div class="program-header">
-                        <div class="program-icon">🤖</div>
-                        <h3 class="program-name">AI & Machine Learning</h3>
-                    </div>
-                    <p class="program-description">Pelajari teknologi kecerdasan buatan dan machine learning dengan praktik langsung menggunakan tools terkini.</p>
-                    <div class="program-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">Deep Learning</span>
-                    </div>
-                    <div class="program-footer">
-                        <span class="program-duration">⏱️ 4 Semester</span>
-                    </div>
-                </div>
-
-                <div class="program-item">
-                    <div class="program-header">
-                        <div class="program-icon">☁️</div>
-                        <h3 class="program-name">Cloud Computing</h3>
-                    </div>
-                    <p class="program-description">Kuasai infrastruktur cloud modern dengan AWS, Azure, dan Google Cloud Platform.</p>
-                    <div class="program-tags">
-                        <span class="tag">AWS</span>
-                        <span class="tag">Azure</span>
-                        <span class="tag">DevOps</span>
-                    </div>
-                    <div class="program-footer">
-                        <span class="program-duration">⏱️ 4 Semester</span>
-                    </div>
-                </div>
-
-                <div class="program-item">
-                    <div class="program-header">
-                        <div class="program-icon">🔒</div>
-                        <h3 class="program-name">Cybersecurity</h3>
-                    </div>
-                    <p class="program-description">Pelajari keamanan sistem dan jaringan untuk melindungi infrastruktur digital.</p>
-                    <div class="program-tags">
-                        <span class="tag">Security</span>
-                        <span class="tag">Penetration Testing</span>
-                    </div>
-                    <div class="program-footer">
-                        <span class="program-duration">⏱️ 4 Semester</span>
-                    </div>
-                </div>
-
-                <div class="program-item">
-                    <div class="program-header">
-                        <div class="program-icon">📱</div>
-                        <h3 class="program-name">Mobile Development</h3>
-                    </div>
-                    <p class="program-description">Buat aplikasi mobile untuk Android dan iOS dengan framework modern seperti Flutter dan React Native.</p>
-                    <div class="program-tags">
-                        <span class="tag">Flutter</span>
-                        <span class="tag">React Native</span>
-                        <span class="tag">UI/UX</span>
-                    </div>
-                    <div class="program-footer">
-                        <span class="program-duration">⏱️ 4 Semester</span>
-                    </div>
-                </div>
-
-                <div class="program-item">
-                    <div class="program-header">
-                        <div class="program-icon">📊</div>
-                        <h3 class="program-name">Big Data</h3>
-                    </div>
-                    <p class="program-description">Analisis data dalam skala besar menggunakan teknologi big data dan data science.</p>
-                    <div class="program-tags">
-                        <span class="tag">Hadoop</span>
-                        <span class="tag">Spark</span>
-                        <span class="tag">Analytics</span>
-                    </div>
-                    <div class="program-footer">
-                        <span class="program-duration">⏱️ 4 Semester</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Timeline Section -->
-        <section id="jadwal" class="section timeline-section">
-            <div class="section-header">
-                <span class="section-tag">Proses Pendaftaran</span>
-                <h2 class="section-title">Timeline Pendaftaran</h2>
-            </div>
-
-            <div class="timeline-container">
-                <div class="timeline-line"></div>
+            <section class="form-section">
+                <h2 class="section-title">Kirim Pesan / Pertanyaan</h2>
+                <p style="margin-bottom: 25px; color: #6c757d;">Jika pertanyaan Anda tidak terjawab di FAQ, silakan isi form di bawah ini. Tim kami akan merespons dalam 1x24 jam.</p>
                 
-                <div class="timeline-block">
-                    <div class="timeline-marker">
-                        <span class="marker-number">1</span>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda">
+                        <span class="error-message" id="errorNama">Nama lengkap wajib diisi</span>
                     </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Tahap Pendaftaran</h3>
-                        <p class="timeline-text">Isi form pendaftaran online dan upload dokumen yang diperlukan</p>
-                        <span class="timeline-date">Januari - Februari</span>
-                    </div>
-                </div>
 
-                <div class="timeline-block">
-                    <div class="timeline-marker">
-                        <span class="marker-number">2</span>
+                    <div class="form-group">
+                        <label for="nim">NIM <span class="required">*</span></label>
+                        <input type="text" id="nim" name="nim" placeholder="Contoh: 2021010123">
+                        <span class="error-message" id="errorNim">NIM wajib diisi (10 digit angka)</span>
                     </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Tes Seleksi</h3>
-                        <p class="timeline-text">Tes tertulis dan wawancara</p>
-                        <span class="timeline-date">Maret</span>
-                    </div>
-                </div>
 
-                <div class="timeline-block">
-                    <div class="timeline-marker">
-                        <span class="marker-number">3</span>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="nama@email.com">
+                        <span class="error-message" id="errorEmail">Email tidak valid</span>
                     </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Pengumuman</h3>
-                        <p class="timeline-text">Pengumuman hasil tes akan diinformasikan melalui email</p>
-                        <span class="timeline-date">April</span>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Investment Section -->
-        <section id="biaya" class="section investment-section">
-            <div class="section-header">
-                <span class="section-tag">Investasi Masa Depan</span>
-                <h2 class="section-title">Investasi Pendidikan</h2>
-            </div>
-
-            <div class="pricing-container">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <div class="pricing-icon">📚</div>
-                        <h3 class="pricing-title">Regular & Kelas</h3>
-                        <p class="pricing-desc">Untuk siswa reguler dengan fasilitas standar</p>
+                    <div class="form-group">
+                        <label for="kategori">Kategori Pertanyaan <span class="required">*</span></label>
+                        <select id="kategori" name="kategori">
+                            <option value="">-- Pilih Kategori --</option>
+                            <option value="pengajuan-surat">Pengajuan Surat</option>
+                            <option value="transkrip">Transkrip Nilai</option>
+                            <option value="pembayaran">Pembayaran</option>
+                            <option value="teknis">Masalah Teknis</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                        <span class="error-message" id="errorKategori">Kategori wajib dipilih</span>
                     </div>
-                    <div class="pricing-body">
-                        <div class="price-amount">
-                            <span class="currency">Rp</span>
-                            <span class="amount">4.200.000</span>
+
+                    <div class="form-group">
+                        <label for="subjek">Subjek <span class="required">*</span></label>
+                        <input type="text" id="subjek" name="subjek" placeholder="Ringkasan pertanyaan Anda">
+                        <span class="error-message" id="errorSubjek">Subjek wajib diisi</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan / Pertanyaan <span class="required">*</span></label>
+                        <textarea id="pesan" name="pesan" placeholder="Jelaskan pertanyaan atau masalah Anda dengan detail..."></textarea>
+                        <div class="char-counter">
+                            <span id="charCount">0</span> / 500 karakter
                         </div>
-                        <ul class="pricing-features">
-                            <li>✓ Akses e-learning</li>
-                            <li>✓ Perpustakaan digital</li>
-                            <li>✓ Lab komputer</li>
-                            <li>✓ Sertifikat resmi</li>
-                        </ul>
-                    </div>
-                    <button class="pricing-btn">Pilih Paket</button>
-                </div>
-
-                <div class="pricing-card featured">
-                    <div class="featured-badge">Populer</div>
-                    <div class="pricing-header">
-                        <div class="pricing-icon">🎓</div>
-                        <h3 class="pricing-title">KIP dan Beasiswa</h3>
-                        <p class="pricing-desc">Dengan benefit tambahan dan akses premium</p>
-                    </div>
-                    <div class="pricing-body">
-                        <div class="price-amount">
-                            <span class="currency">Rp</span>
-                            <span class="amount">5.500.000</span>
-                        </div>
-                        <ul class="pricing-features">
-                            <li>✓ Semua fitur Regular</li>
-                            <li>✓ Mentoring premium</li>
-                            <li>✓ Workshop eksklusif</li>
-                            <li>✓ Job placement</li>
-                        </ul>
-                    </div>
-                    <button class="pricing-btn primary">Pilih Paket</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Campus Section -->
-        <section id="kampus" class="section campus-section">
-            <div class="section-header">
-                <span class="section-tag">Fasilitas Modern</span>
-                <h2 class="section-title">Life at Campus</h2>
-            </div>
-
-            <div class="campus-grid">
-                <div class="campus-card large">
-                    <div class="campus-image">
-                        <img src="assets/images/campus.jpg" alt="Campus">
-                        <div class="campus-overlay">
-                            <h3 class="campus-title">Fasilitas Kampus</h3>
-                            <p class="campus-desc">Gedung modern dengan teknologi terkini</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="campus-card">
-                    <div class="campus-image">
-                        <img src="assets/images/lab.jpg" alt="Lab">
-                        <div class="campus-overlay">
-                            <h3 class="campus-title">Lab Komputer</h3>
-                            <p class="campus-desc">Lab dengan perangkat canggih</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Alumni Stories -->
-            <div class="alumni-container">
-                <h3 class="alumni-heading">Alumni Stories</h3>
-                <div class="alumni-grid">
-                    <div class="alumni-card">
-                        <div class="alumni-quote">"</div>
-                        <p class="alumni-text">Program ini memberikan bekal yang sangat solid untuk karir di tech industry</p>
-                        <div class="alumni-profile">
-                            <div class="alumni-avatar"></div>
-                            <div class="alumni-info">
-                                <h4 class="alumni-name">Dimas Aji</h4>
-                                <p class="alumni-role">Software Engineer</p>
-                            </div>
-                        </div>
+                        <span class="error-message" id="errorPesan">Pesan minimal 20 karakter</span>
                     </div>
 
-                    <div class="alumni-card">
-                        <div class="alumni-quote">"</div>
-                        <p class="alumni-text">Pengalaman belajar yang luar biasa dengan mentor-mentor berpengalaman</p>
-                        <div class="alumni-profile">
-                            <div class="alumni-avatar"></div>
-                            <div class="alumni-info">
-                                <h4 class="alumni-name">Sarah Putri</h4>
-                                <p class="alumni-role">Data Scientist</p>
-                            </div>
-                        </div>
+                    <div class="btn-group">
+                        <button type="submit" class="btn-primary">Kirim Pesan</button>
+                        <button type="button" class="btn-secondary" id="btnReset">Reset Form</button>
                     </div>
-                </div>
-            </div>
-        </section>
+                </form>
+            </section>
+        </main>
 
-        <!-- CTA Section -->
-        <section class="section cta-section">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready to Join?</h2>
-                <p class="cta-subtitle">Bergabung dengan 38 calon mahasiswa lainnya di angkatan ini</p>
-                <button class="cta-button">
-                    <span>Daftar Sekarang</span>
-                    <span class="btn-glow"></span>
-                </button>
-            </div>
-        </section>
-    </main>
+        <footer>
+            <p><strong>Referensi Pengembangan:</strong></p>
+            <p>Referensi pengembangan fitur dan alur sistem ini mengacu pada Portal Layanan Mahasiswa FaSTI – Sistem Informasi Layanan Mahasiswa (fasti.roniwahyu.com) sebagai sumber inspirasi fungsional tugas akhir.</p>
+            <p style="margin-top: 15px;">&copy; 2025 Portal Mahasiswa FaSTI. All rights reserved.</p>
+        </footer>
+    </div>
 
-    <script src="asset_js"></script>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-icon" id="modalIcon">✓</div>
+            <h2 id="modalTitle">Berhasil!</h2>
+            <p id="modalMessage">Pesan Anda telah berhasil dikirim.</p>
+            <button class="btn-primary" id="btnCloseModal">Tutup</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
